@@ -1,0 +1,16 @@
+<h1>Test HTML Page</h1>
+
+<p>This HTML page is used to test that nofollow links have been inserted correctly.</p>
+
+<p>It contains a number of links. Here's one <a href="/about">without a hostname</a>. Here is 
+<a href="http://www.bbc.co.uk">an external one</a>, with no rel attribute. Here is one that
+<a href="http://www.google.com" rel="me">already has a rel attribute</a>, which should be preserved.
+And here is one that <a href="http://php.net" rel="nofollow">already includes nofollow</a>, which must not
+be repeated.</p>
+
+<p>Finally, here is a list of links we will skip, depending on what the current domain is:</p>
+
+<ul>
+    <li><a href="http://example.com/some-page">Example one</a></li>
+    <li><a href="http://example.org/another-page">Example one</a></li>
+</ul>
